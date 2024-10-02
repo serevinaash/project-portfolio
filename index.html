@@ -4,86 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio with Tailwind CSS</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Portofolio</title>
 </head>
 
-<body class="font-sans bg-gray-100">
+<body class="bg-gray-100">
 
-    <!-- Header with logo and navigation -->
-    <header class="bg-white shadow">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div class="text-2xl font-bold">Logo</div>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold">Logo</div>
             <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#home" class="hover:text-blue-500">Home</a></li>
-                    <li><a href="#features" class="hover:text-blue-500">Features</a></li>
-                    <li><a href="#testimonials" class="hover:text-blue-500">Testimonials</a></li>
-                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:underline">Home</a></li>
+                    <li><a href="#features" class="hover:underline">Features</a></li>
+                    <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section with main image, title, and call-to-action button -->
+    <!-- Hero Section -->
     <section id="home" class="hero-section bg-blue-500 text-white py-20">
         <div class="container mx-auto flex flex-col items-center">
             <img src="dist/img/SVG/DrawKit Vector Illustration Project Manager (13).svg" alt="Hero Image" class="mb-6 w-1/5">
-            <!-- Mengatur lebar gambar menjadi setengah dari lebar kontainer -->
             <h1 class="text-4xl font-bold mb-4">Welcome to Our Product</h1>
             <p class="text-lg mb-6">Discover the best way to manage your tasks efficiently</p>
-            <a href="#contact" class="bg-white text-blue-500 font-bold py-2 px-4 rounded hover:bg-gray-200">Get Started</a>
+            <a href="#contact" class="bg-white text-blue-500 font-bold py-2 px-4 rounded hover:bg-gray-200 transition duration-300">Get Started</a>
         </div>
     </section>
 
-
-    <!-- Features Section explaining 3 main features -->
-    <section id="features" class="features-section py-20 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-12">Our Features</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow">
-                    <h3 class="text-xl font-bold mb-4">Feature 1</h3>
-                    <p>Feature 1 description goes here, explaining the key benefit of this feature.</p>
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Our Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Feature 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow">
-                    <h3 class="text-xl font-bold mb-4">Feature 2</h3>
-                    <p>Feature 2 description goes here, explaining the key benefit of this feature.</p>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Feature 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow">
-                    <h3 class="text-xl font-bold mb-4">Feature 3</h3>
-                    <p>Feature 3 description goes here, explaining the key benefit of this feature.</p>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Feature 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section py-20 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-12">What Our Users Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-100 p-8 rounded-lg shadow">
-                    <p>"This product has greatly improved our productivity. Highly recommended!"</p>
-                    <p class="font-bold mt-4">- User A</p>
-                </div>
-                <div class="bg-gray-100 p-8 rounded-lg shadow">
-                    <p>"Amazing features and easy to use. It has made our team more efficient."</p>
-                    <p class="font-bold mt-4">- User B</p>
-                </div>
+    <section id="testimonials" class="py-20 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Testimonials</h2>
+            <div class="flex flex-col items-center">
+                <blockquote class="bg-white p-6 rounded shadow mb-4 max-w-md text-center">
+                    <p>"This product has changed my life!"</p>
+                    <cite class="block mt-2 text-gray-600">- User 1</cite>
+                </blockquote>
+                <blockquote class="bg-white p-6 rounded shadow mb-4 max-w-md text-center">
+                    <p>"I can't imagine working without it!"</p>
+                    <cite class="block mt-2 text-gray-600">- User 2</cite>
+                </blockquote>
             </div>
         </div>
     </section>
 
-    <!-- Footer with social media links and brief information -->
-    <footer id="contact" class="footer-section bg-gray-800 text-white py-8">
-        <div class="container mx-auto flex flex-col items-center">
-            <div class="flex space-x-4 mb-4">
-                <a href="#" class="hover:text-blue-500">Facebook</a>
-                <a href="#" class="hover:text-blue-500">Twitter</a>
-                <a href="#" class="hover:text-blue-500">Instagram</a>
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="hover:underline">Facebook</a> |
+                <a href="#" class="hover:underline">Twitter</a> |
+                <a href="#" class="hover:underline">Instagram</a>
             </div>
-            <p class="text-sm">&copy; 2024 Your Company. All rights reserved.</p>
         </div>
     </footer>
 
